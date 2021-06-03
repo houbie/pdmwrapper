@@ -4,6 +4,7 @@
 Build/test Python projects with decent dependency management and without tool installation hassle.
 * `git clone https://github.com/houbie/pdmwrapper.git`
 * `./pdmw install`
+* when using pyenv: `pdm use $(pyenv which python)`  
 * `./pdmw run pytest`
 
 ## What?
@@ -36,5 +37,6 @@ spend a couple of days setting up a dev environment in order to change one line 
 * Create a Windows script
 * Is `pip install` the best strategy? Or is it better to maintain a 
   downloadable self contained  archive, or ...?
+* Why is the `pdm use $(pyenv which python)` step needed?  
 
 I'm not a shell specialist and python noob, so definitely need help here.
