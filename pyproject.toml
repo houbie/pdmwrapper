@@ -1,0 +1,27 @@
+[project]
+name = "pdmwrapperpoc"
+version = "0.1.0"
+description = "POC to showcase a wrapper script that install PDM on the fly"
+authors = ["ihoubr <ivo@houbrechts-it.be>"]
+
+dependencies = [
+    "pycowsay~=0.0"
+]
+requires-python = ">=3.8"
+dynamic = ["classifiers"]
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest~=6.2"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
