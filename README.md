@@ -1,4 +1,6 @@
-# pdmwrapper
+# Archived, use https://github.com/houbie/pyprojectx instead!
+
+## pdmwrapper
 
 ## TL;DR
 Build/test Python projects with decent dependency management and without tool installation hassle.
